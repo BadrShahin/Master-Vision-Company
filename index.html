@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Master Vision Tourism Company</title>
+	<style>
+		body{
+			background-image: url('images/background.png');
+		}
+		#about{
+			background: url('images/Logo5.jpg');
+		}
+		footer{
+			background-image: url('images/footer_background.jpg');
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Rochester" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+	<header class="row">
+		<section id="home">
+			<div class="col-md-12 navbar"  id="navbar">
+				<div id="logo">
+					<picture>
+						<img class="img-responsive" src="images/Logo.png" alt="Master Vision" title="Master Vision" id="fullWidthLogo">
+						<h4 id="smallWidthLogo">Master Vision</h4>
+					</picture>
+				</div>
+				<ul>
+					<li ng-repeat="item in menuItems"><a href={{item.url}}>{{item.name}}</a></li>
+					<li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
+				</ul>
+			</div>
+		</section>
+	</header>
+	<article class="container" id="container">
+
+		<!-- Carousel Slider -->
+
+		<article class="row" id="slider">
+			<div  id="carouselSlider"  class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators" style="z-index: 1">
+					<li data-target="#carouselSlider" data-slide-to="0" class="acvtie"></li>
+					<li data-target="#carouselSlider" data-slide-to="1"></li>
+					<li data-target="#carouselSlider" data-slide-to="2"></li>
+					<li data-target="#carouselSlider" data-slide-to="3"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+			    <div class="carousel-inner">
+				    <div class="item active">
+				        <img src="images/1.jpg" alt="Evil Tower" style="width:100%; height: 50%;">
+				        <div class="carousel-caption">
+				        	<h3>Evail Tower</h3>
+				        	<p>Welcome, that's evil tower</p>
+				        </div>
+				    </div>
+				    <div class="item">
+				        <img src="images/2.jpg" alt="Pyramids" style="width:100%; height: 50%;">
+				        <div class="carousel-caption">
+				        	<h3>Pyramids</h3>
+				        	<p>Welcome, that's egyption pyramids</p>
+				        </div>
+				    </div>
+				    <div class="item">
+				        <img src="images/london.jpg" alt="London Ferris Wheel" style="width:100%; height: 50%;">
+				        <div class="carousel-caption">
+				        	<h3>London</h3>
+				        	<p>London Ferris Wheel.</p>
+				        </div>
+				    </div>
+
+				    <div class="item">
+				        <img src="images/miami.jpg" alt="The City Of Miami" style="width:100%; height: 50%;">
+				        <div class="carousel-caption">
+				        	<h3>Miami.</h3>
+				        	<p>The City Of Miami.</p>
+				        </div>
+				    </div>
+
+					<!-- Left and right controls -->
+				    <a class="left carousel-control" href="#carouselSlider" data-slide="prev">
+				      	<span class="glyphicon glyphicon-chevron-left"></span>
+				      	<span class="sr-only">Previous</span>
+				    </a>
+				    <a class="right carousel-control" href="#carouselSlider" data-slide="next">
+				      	<span class="glyphicon glyphicon-chevron-right"></span>
+				      	<span class="sr-only">Next</span>
+				    </a>
+				</div>
+			</div>
+		</article>
+
+		<!-- End Of Carousel Slider --> 
+
+		<!-- About Us -->
+
+		<article class="row" id="about">
+			<section class="col-md-12">
+				<br><h2 class="text-upercase text-center">About Us</h2>
+			</section>
+			<section>
+				<p> Master vision integrated solutions is considered to be an original vision for comprehensive and integrated
+					solutions which has been emerged to satisfy the increasing needs in information technology market in order to develop and mechanize the work in the institutions and corporation.<br>
+ 					Master Vision is specialized in establishing the mechanizing systems of work procedures as we are offering a complete range of tailor-made web development and interactive multimedia to carry out your specific business needs.From hosting, flash websites, dynamic websites, web flash intro, SEO service, to media and interactive multimedia service and many more to provide our customer with the best way to accommodate the evolution of the internet development age which we live in.<br>
+					Moreover, we provide our customer with the less time management systems through our web applications which help in organizing and managing all of your work through the internet.<br>
+				</p>
+			</section>
+		</article>
+
+		<!-- End Of About Us -->
+
+		<!-- Services -->
+
+		<article class="row" id="services">
+			<section>
+				<h2 class="text-capitalize text-center">Our Most Demand Servics.</h2>
+				<!--<p class="text-capitalize">we introduce some of the most wanted service inside egypt as internal tourism and around the world as external or religious tourism. we introduce some of the most wanted service inside egypt as internal tourism and around the world as external or religious tourism. we introduce some of the most wanted service inside egypt as internal tourism and around the world as external or religious tourism.</p>-->
+			</section>
+			<section id="internal" style="padding: 0 1%;">
+				<div class="text-capitalize">
+					<div>
+						<h3>our internal tourism.</h3>
+						<p>we introduce some of the amazing places in egypt. in many cities around the country as cairo, aswan, alexandria, loxor, fayoum and the most places to visit of other cities.</p>
+					    <button class="btn btn-primary">learn more..</button><br><br>
+					</div>
+					<table style="font-size: 14px;">
+						<tr>
+							<td style="border: 5px solid #eee;">
+								<div class="col-md-8" style="background-color: #eee; opacity: 0.7;">
+									<h4>Cairo</h4>
+									<p>this paragraph contains a short discription about cairo. this paragraph contains a short discription about cairo. this paragraph contains a short discription about cairo.</p>
+									<button class="btn btn-primary" style="border-radius: 10%; border: 2px solid #eee">more</button>
+								</div>
+								<div class="col-md-4" style="border-left: 5px solid #eee">
+									<img class="img-responsive" src="images/egypt/cairo.jpg" alt="Cairo" width="100%">
+								</div>
+							</td>
+							<td rowspan="4" class="col-md-6" id="internalTourismTD">
+								<section>
+									<div id="internalTourism"  class="carousel slide" data-ride="carousel">
+											<ol class="carousel-indicators" style="z-index: 1">
+												<li data-target="#internalTourism" data-slide-to="0" class="acvtie"></li>
+												<li data-target="#internalTourism" data-slide-to="1"></li>
+												<li data-target="#internalTourism" data-slide-to="2"></li>
+												<li data-target="#internalTourism" data-slide-to="3"></li>
+												<li data-target="#internalTourism" data-slide-to="4"></li>
+												<li data-target="#internalTourism" data-slide-to="5"></li>
+												<li data-target="#internalTourism" data-slide-to="6"></li>
+												<li data-target="#internalTourism" data-slide-to="7"></li>
+											</ol>
+											<!-- Wrapper for slides -->
+										    <div class="carousel-inner text-capitalize">
+											    <div class="item active">
+											        <img src="images/egypt/cairo.jpg" alt="Cairo" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Cairo.</h3>
+											        	<p>Cairo at night.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+											    <div class="item">
+											        <img src="images/egypt/abu-simbel-egypt.jpg" alt="abu simbel" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Aswan.</h3>
+											        	<p>Abu Simbel Temple.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+											    <div class="item">
+											        <img src="images/egypt/giza_1.jpg" alt="The Sphinx" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Giza.</h3>
+											        	<p>The Sphinx.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+
+											    <div class="item">
+											        <img src="images/egypt/loxor.jpg" alt="Loxor" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Loxor.</h3>
+											        	<p>Hatshepsut at Deir el Bahari.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+											    <div class="item">
+											        <img src="images/egypt/sharm.jpg" alt="sharm el sheikh" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>sharm el sheikh.</h3>
+											        	<p>sharm el sheikh tourist resorts.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+											    <div class="item">
+											        <img src="images/egypt/aswan.jpg" alt="Aswan" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Aswan.</h3>
+											        	<p>Aswan tourist resorts.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+											    <div class="item">
+											        <img src="images/egypt/giza_2.jpg" alt="The Pyramids" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Giza.</h3>
+											        	<p>The Pyramids.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+
+											    <div class="item">
+											        <img src="images/egypt/fayoum.jpg" alt="Fayoum" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>fayoum.</h3>
+											        	<p>fayoum tourist resorts.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+
+												<!-- Left and right controls -->
+											    <a class="left carousel-control" href="#internalTourism" data-slide="prev">
+											      	<span class="glyphicon glyphicon-chevron-left"></span>
+											      	<span class="sr-only">Previous</span>
+											    </a>
+											    <a class="right carousel-control" href="#internalTourism" data-slide="next">
+											      	<span class="glyphicon glyphicon-chevron-right"></span>
+											      	<span class="sr-only">Next</span>
+											    </a>
+											</div>
+										</div>
+								</section>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 5px solid #eee;">
+								<div class="col-md-8" style="background-color: #eee; opacity: 0.7;">
+									<h4>Giza</h4>
+									<p>this paragraph contains a short discription about giza. this paragraph contains a short discription about giza. this paragraph contains a short discription about giza.</p>
+									<button class="btn btn-primary" style="border-radius: 10%; border: 2px solid #eee">more</button>
+								</div>
+								<div class="col-md-4" style="border-left: 5px solid #eee">
+									<img class="img-responsive" src="images/egypt/giza_1.jpg" alt="Giza" width="100%">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 5px solid #eee; margin-top: 1%;">
+								<div class="col-md-8" style="background-color: #eee; opacity: 0.7;">
+									<h4>Aswan</h4>
+									<p>this paragraph contains a short discription about aswan. this paragraph contains a short discription about aswan. this paragraph contains a short discription about aswan.</p>
+									<button class="btn btn-primary" style="border-radius: 10%; border: 2px solid #eee">more</button>
+								</div>
+								<div class="col-md-4" style="border-left: 5px solid #eee">
+									<img class="img-responsive" src="images/egypt/aswan.jpg" alt="aswan" width="100%">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 5px solid #eee; margin-top: 1%;">
+								<div class="col-md-8" style="background-color: #eee; opacity: 0.7;">
+									<h4>Loxor</h4>
+									<p>this paragraph contains a short discription about loxor. this paragraph contains a short discription about loxor. this paragraph contains a short discription about loxor.</p>
+									<button class="btn btn-primary" style="border-radius: 10%; border: 2px solid #eee">more</button>
+								</div>
+								<div class="col-md-4" style="border-left: 5px solid #eee">
+									<img class="img-responsive" src="images/egypt/loxor.jpg" alt="Loxor" width="100%">
+								</div>
+							</td>
+						</tr>
+						<tr id="internalTourismTR">
+							<td>
+								<section>
+									<div id="internalTourism"  class="carousel slide" data-ride="carousel">
+											<ol class="carousel-indicators" style="z-index: 1">
+												<li data-target="#internalTourism" data-slide-to="0" class="acvtie"></li>
+												<li data-target="#internalTourism" data-slide-to="1"></li>
+												<li data-target="#internalTourism" data-slide-to="2"></li>
+												<li data-target="#internalTourism" data-slide-to="3"></li>
+												<li data-target="#internalTourism" data-slide-to="4"></li>
+												<li data-target="#internalTourism" data-slide-to="5"></li>
+												<li data-target="#internalTourism" data-slide-to="6"></li>
+												<li data-target="#internalTourism" data-slide-to="7"></li>
+											</ol>
+											<!-- Wrapper for slides -->
+										    <div class="carousel-inner text-capitalize">
+											    <div class="item active">
+											        <img src="images/egypt/cairo.jpg" alt="Cairo" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Cairo.</h3>
+											        	<p>Cairo at night.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+											    <div class="item">
+											        <img src="images/egypt/abu-simbel-egypt.jpg" alt="abu simbel" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Aswan.</h3>
+											        	<p>Abu Simbel Temple.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+											    <div class="item">
+											        <img src="images/egypt/giza_1.jpg" alt="The Sphinx" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Giza.</h3>
+											        	<p>The Sphinx.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+
+											    <div class="item">
+											        <img src="images/egypt/loxor.jpg" alt="Loxor" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Loxor.</h3>
+											        	<p>Hatshepsut at Deir el Bahari.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+											    <div class="item">
+											        <img src="images/egypt/sharm.jpg" alt="sharm el sheikh" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>sharm el sheikh.</h3>
+											        	<p>sharm el sheikh tourist resorts.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+											    <div class="item">
+											        <img src="images/egypt/aswan.jpg" alt="Aswan" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Aswan.</h3>
+											        	<p>Aswan tourist resorts.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+											    <div class="item">
+											        <img src="images/egypt/giza_2.jpg" alt="The Pyramids" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Giza.</h3>
+											        	<p>The Pyramids.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+
+											    <div class="item">
+											        <img src="images/egypt/fayoum.jpg" alt="Fayoum" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>fayoum.</h3>
+											        	<p>fayoum tourist resorts.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+
+												<!-- Left and right controls -->
+											    <a class="left carousel-control" href="#internalTourism" data-slide="prev">
+											      	<span class="glyphicon glyphicon-chevron-left"></span>
+											      	<span class="sr-only">Previous</span>
+											    </a>
+											    <a class="right carousel-control" href="#internalTourism" data-slide="next">
+											      	<span class="glyphicon glyphicon-chevron-right"></span>
+											      	<span class="sr-only">Next</span>
+											    </a>
+											</div>
+										</div>
+								</section>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+			
+			<section id="internal" style="padding: 0 1%;">
+				<div class="text-capitalize">
+					<div>
+						<h3>our internal tourism.</h3>
+						<p>we introduce some of the amazing places in egypt. in many cities around the country as cairo, aswan, alexandria, loxor, fayoum and the most places to visit of other cities.</p>
+					    <button class="btn btn-primary">learn more..</button><br><br>
+					</div>
+					<table style="font-size: 14px;">
+						<tr>
+							<td style="border: 5px solid #eee;">
+								<div class="col-md-8" style="background-color: #eee; opacity: 0.7;">
+									<h4>Cairo</h4>
+									<p>this paragraph contains a short discription about cairo. this paragraph contains a short discription about cairo. this paragraph contains a short discription about cairo.</p>
+									<button class="btn btn-primary" style="border-radius: 10%; border: 2px solid #eee">more</button>
+								</div>
+								<div class="col-md-4" style="border-left: 5px solid #eee">
+									<img class="img-responsive" src="images/egypt/cairo.jpg" alt="Cairo" width="100%">
+								</div>
+							</td>
+							<td rowspan="4" class="col-md-6" id="externalTourismTD">
+								<section>
+									<div id="externalTourism"  class="carousel slide" data-ride="carousel">
+											<ol class="carousel-indicators" style="z-index: 1">
+												<li data-target="#externalTourism" data-slide-to="0" class="acvtie"></li>
+												<li data-target="#externalTourism" data-slide-to="1"></li>
+												<li data-target="#externalTourism" data-slide-to="2"></li>
+												<li data-target="#externalTourism" data-slide-to="3"></li>
+												<li data-target="#externalTourism" data-slide-to="4"></li>
+											</ol>
+											<!-- Wrapper for slides -->
+										    <div class="carousel-inner text-capitalize">
+											    <div class="item active">
+											        <img src="images/world/paris.jpg" alt="paris" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Paris.</h3>
+											        	<p>evil tower.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+											    <div class="item">
+											        <img src="images/world/london.jpg" alt="london" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>London.</h3>
+											        	<p>london wheel.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+											    <div class="item">
+											        <img src="images/world/china.jpg" alt="china" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>China.</h3>
+											        	<p>china tourist places.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+											    <div class="item">
+											        <img src="images/world/miami.jpg" alt="miami" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>Miami.</h3>
+											        	<p>miami city.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+
+											    <div class="item">
+											        <img src="images/world/india.jpg" alt="india" style="width:100%; height: 100%;">
+											        <div class="carousel-caption">
+											        	<h3>India.</h3>
+											        	<p>india tourist places.</p>
+											        	<button class="btn btn-primary">Reserve now</button>
+											        </div>
+											    </div>
+
+
+												<!-- Left and right controls -->
+											    <a class="left carousel-control" href="#externalTourism" data-slide="prev">
+											      	<span class="glyphicon glyphicon-chevron-left"></span>
+											      	<span class="sr-only">Previous</span>
+											    </a>
+											    <a class="right carousel-control" href="#externalTourism" data-slide="next">
+											      	<span class="glyphicon glyphicon-chevron-right"></span>
+											      	<span class="sr-only">Next</span>
+											    </a>
+											</div>
+										</div>
+								</section>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 5px solid #eee;">
+								<div class="col-md-8" style="background-color: #eee; opacity: 0.7;">
+									<h4>Paris</h4>
+									<p>this paragraph contains a short discription about paris. this paragraph contains a short discription about paris. this paragraph contains a short discription about paris.</p>
+									<button class="btn btn-primary" style="border-radius: 10%; border: 2px solid #eee">more</button>
+								</div>
+								<div class="col-md-4" style="border-left: 5px solid #eee">
+									<img class="img-responsive" src="images/world/paris.jpg" alt="paris" width="100%">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 5px solid #eee; margin-top: 1%;">
+								<div class="col-md-8" style="background-color: #eee; opacity: 0.7;">
+									<h4>Miami</h4>
+									<p>this paragraph contains a short discription about miami. this paragraph contains a short discription about miami. this paragraph contains a short discription about miami.</p>
+									<button class="btn btn-primary" style="border-radius: 10%; border: 2px solid #eee">more</button>
+								</div>
+								<div class="col-md-4" style="border-left: 5px solid #eee">
+									<img class="img-responsive" src="images/world/miami.jpg" alt="miami" width="100%">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="border: 5px solid #eee; margin-top: 1%;">
+								<div class="col-md-8" style="background-color: #eee; opacity: 0.7;">
+									<h4>India</h4>
+									<p>this paragraph contains a short discription about india. this paragraph contains a short discription about india. this paragraph contains a short discription about india.</p>
+									<button class="btn btn-primary" style="border-radius: 10%; border: 2px solid #eee">more</button>
+								</div>
+								<div class="col-md-4" style="border-left: 5px solid #eee">
+									<img class="img-responsive" src="images/world/india.jpg" alt="india" width="100%">
+								</div>
+							</td>
+						</tr>
+						<tr id="externalTourismTR">
+							<td>
+								<section>
+									<div id="externalTourism"  class="carousel slide" data-ride="carousel">
+											<ol class="carousel-indicators" style="z-index: 1">
+												<li data-target="#externalTourism" data-slide-to="0" class="acvtie"></li>
+												<li data-target="#externalTourism" data-slide-to="1"></li>
+												<li data-target="#externalTourism" data-slide-to="2"></li>
+												<li data-target="#externalTourism" data-slide-to="3"></li>
+												<li data-target="#externalTourism" data-slide-to="4"></li>
+											</ol>
+											<!-- Wrapper for slides -->
+										    <div class="carousel-inner text-capitalize">
+											    <div class="item active">
+										        <img src="images/world/paris.jpg" alt="paris" style="width:100%; height: 100%;">
+										        <div class="carousel-caption">
+										        	<h3>Paris.</h3>
+										        	<p>evil tower.</p>
+										        	<button class="btn btn-primary">Reserve now</button>
+										        </div>
+										    </div>
+										    <div class="item">
+										        <img src="images/world/london.jpg" alt="london" style="width:100%; height: 100%;">
+										        <div class="carousel-caption">
+										        	<h3>London.</h3>
+										        	<p>london wheel.</p>
+										        	<button class="btn btn-primary">Reserve now</button>
+										        </div>
+										    </div>
+										    <div class="item">
+										        <img src="images/world/china.jpg" alt="china" style="width:100%; height: 100%;">
+										        <div class="carousel-caption">
+										        	<h3>China.</h3>
+										        	<p>china tourist places.</p>
+										        	<button class="btn btn-primary">Reserve now</button>
+										        </div>
+										    </div>
+										    <div class="item">
+										        <img src="images/world/miami.jpg" alt="miami" style="width:100%; height: 100%;">
+										        <div class="carousel-caption">
+										        	<h3>Miami.</h3>
+										        	<p>miami city.</p>
+										        	<button class="btn btn-primary">Reserve now</button>
+										        </div>
+										    </div>
+
+										    <div class="item">
+										        <img src="images/world/india.jpg" alt="india" style="width:100%; height: 100%;">
+										        <div class="carousel-caption">
+										        	<h3>India.</h3>
+										        	<p>india tourist places.</p>
+										        	<button class="btn btn-primary">Reserve now</button>
+										        </div>
+										    </div>
+
+												<!-- Left and right controls -->
+											    <a class="left carousel-control" href="#externalTourism" data-slide="prev">
+											      	<span class="glyphicon glyphicon-chevron-left"></span>
+											      	<span class="sr-only">Previous</span>
+											    </a>
+											    <a class="right carousel-control" href="#externalTourism" data-slide="next">
+											      	<span class="glyphicon glyphicon-chevron-right"></span>
+											      	<span class="sr-only">Next</span>
+											    </a>
+											</div>
+										</div>
+								</section>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+
+			<section id="religious">
+				
+			</section>
+		</article>
+
+		<!-- End Of Services -->
+
+		<!-- Why Us -->
+		<br><article class="row" id="why_us" style="padding: 0 1%;">
+			<div class="col-md-12"><h2 class="text-center text-capitalize">What our customers say about us?</h2></div><br><br><br>
+			<div id="carouselWhy" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators" style="z-index: 1">
+					<li data-target="#carouselWhy" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselWhy" data-slide-to="1"></li>
+					<li data-target="#carouselWhy" data-slide-to="2"></li>
+					<li data-target="#carouselWhy" data-slide-to="3"></li>
+					<li data-target="#carouselWhy" data-slide-to="4"></li>
+					<li data-target="#carouselWhy" data-slide-to="5"></li>
+					<li data-target="#carouselWhy" data-slide-to="6"></li>
+					<li data-target="#carouselWhy" data-slide-to="7"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img class="img-responsive" src="images/img_avatar1.PNG" alt="avatar">
+				        <div class="carousel-caption">
+				        	<h3>Ahmed Ali</h3>
+				        	<p>Great company.</p>
+				        </div>
+					</div>
+					<div class="item">
+						<img class="img-responsive" src="images/img_avatar3.PNG" alt="avatar">
+				        <div class="carousel-caption">
+				        	<h3>Amr Mashaal</h3>
+				        	<p>Comfortable Travel.</p>
+				        </div>
+					</div>
+					<div class="item">
+						<img class="img-responsive" src="images/img_avatar2.PNG" alt="avatar">
+				        <div class="carousel-caption">
+				        	<h3>Aya Ali</h3>
+				        	<p>Very Good.</p>
+				        </div>
+					</div>
+					<div class="item">
+						<img class="img-responsive" src="images/img_avatar4.PNG" alt="avatar">
+				        <div class="carousel-caption">
+				        	<h3>Salma Ahmed</h3>
+				        	<p>Great company.</p>
+				        </div>
+					</div>
+					<div class="item">
+						<img class="img-responsive" src="images/img_avatar1.PNG" alt="avatar">
+				        <div class="carousel-caption">
+				        	<h3>Amr Mashaal</h3>
+				        	<p>Comfortable Travel.</p>
+				        </div>
+					</div>
+					<div class="item">
+						<img class="img-responsive" src="images/img_avatar3.PNG" alt="avatar">
+				        <div class="carousel-caption">
+				        	<h3>Badr Shahin</h3>
+				        	<p>Very Good.</p>
+				        </div>
+					</div>
+					<div class="item">
+						<img class="img-responsive" src="images/img_avatar2.PNG" alt="avatar">
+				        <div class="carousel-caption">
+				        	<h3>Eman Ahmed</h3>
+				        	<p>Great company.</p>
+				        </div>
+					</div>
+					<div class="item">
+						<img class="img-responsive" src="images/img_avatar4.PNG" alt="avatar">
+				        <div class="carousel-caption">
+				        	<h3>Doaa Amr</h3>
+				        	<p>Comfortable Travel.</p>
+				        </div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<!-- End Of Why Us --> 
+
+		<!-- Contact Us -->
+
+		<article class="row" id="contact">
+			<section class="col-md-12">
+				<br><h2 class="text-upercase text-center">Contact Us</h2>
+				<form>
+					<div class="col-md-4">
+						<input class="col-md-12" type="text" name="name" ng-model="name" placeholder="Name" required>
+					</div>
+					<div class="col-md-4">
+						<input class="col-md-12" type="email" name="email" ng-model="email" placeholder="Email" required>
+					</div>
+					<div class="col-md-4">
+						<input class="col-md-12" type="tel" name="phone" ng-model="phone" placeholder="Phone" required>
+					</div>
+					<div class="col-md-12">
+						<textarea class="col-md-12" name="message" ng-model="msg" placeholder="Message" rows="6" required></textarea>
+					</div>
+					<div class="col-md-12" >
+						<input class="col-md-1" id="submit" type="submit" name="submit" ng-model="submit" value="SEND">
+					</div>
+				</form>
+			</section>
+		</article>
+
+		<! End Of Contact Us -->
+
+	</article>
+
+	<footer class="container">
+		<section>
+			<div class="row" id="social">
+				<ul>
+					<li ng-repeat="icon in socialIcons"><a class={{icon.class}} href={{icon.url}} target="_blank"></a></li>
+				</ul>
+			</div>
+			<div>
+				<p style="color: #eee; text-align: center;">&copy; Master Vision 2017-2018, All rights reserved.</p>
+			</div>
+		</section>
+	</footer>
+	<script>
+		$('.carousel').carousel({
+		  interval: 3000
+		})
+	</script>
+</body>
+</html>
