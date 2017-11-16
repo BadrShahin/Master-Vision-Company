@@ -125,7 +125,6 @@ h2, h3, h4{
 .navbar .icon {
     display: none;
 }
-
 /* When the screen is less than 600 pixels wide.Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
   .navbar a {display: none;}
