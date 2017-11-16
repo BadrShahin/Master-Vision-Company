@@ -12,9 +12,7 @@ angular.module("myApp", []).controller("myCtrl", function($scope){
 	{name:'About Us', url:'#about'},
 	{name:'Services', url:'#services'},
 	{name:'Why Us', url:'#why_us'},
-	{name:'Contact Us', url:'#contact'},
-	{name:'Login', url:'#login'},
-	{name:'Register', url:'#register'}
+	{name:'Contact Us', url:'#contact'}
 	];
 });
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
