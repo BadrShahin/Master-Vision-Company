@@ -14,6 +14,105 @@
 		footer{
 			background-image: url('images/footer_background.jpg');
 		}
+		
+		/* img container */
+		.imgcontainer{
+			margin: 1% 0;
+			text-align: center;
+			position: relative;
+		}
+		img.avatar{
+			width: 20%;
+			border-radius: 50%;
+		}
+		#container {
+		    padding: 3% 5%;
+		}
+		/* input container */ 
+		input[type=text], input[type=password], input[type=email], input[type=tel], input[type=url]{
+		    width: 100%;
+			padding: 3px;
+			margin: 1% 0 0 0;
+			border: none;
+			display: inline-block;
+			background-color: unset;
+			border-bottom: 2px solid #CCC;
+		    box-sizing: border-box;
+		}
+		/* Set a style for all buttons */
+		button {
+			border: none;
+			padding: 3px;
+			font-size: 25px;
+		    background-color: #11749e;
+		}
+		button:hover {
+		    opacity: 0.7;
+		}
+
+		/* modal */
+		.modal{
+			top: 0;
+			left: 0;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			display: none;
+			overflow: auto;
+			position: fixed;
+		}
+		/* modal content */
+		.modal-content{
+			width:80%;
+			margin: 1% auto 15% auto;
+    		border: 1px solid #888;
+		}
+		/* The Close Button (x) */
+		.close{
+			top: 0;
+			right: 2%;
+		    color: #000;
+		    font-size: 35px;
+		    font-weight: bold;
+		    position: absolute;
+		}
+		.close:hover,
+		.close:focus {
+		    color: red;
+		}
+
+		/* Add Zoom Animation */
+		.animate {
+		    -webkit-animation: animatezoom 0.6s;
+		    animation: animatezoom 0.6s
+		}
+
+		@-webkit-keyframes animatezoom {
+		    from {-webkit-transform: scale(0)} 
+		    to {-webkit-transform: scale(1)}
+		}
+		    
+		@keyframes animatezoom {
+		    from {transform: scale(0)} 
+		    to {transform: scale(1)}
+		}
+
+		/* Change styles for span and cancel button on extra small screens */
+		@media screen and (max-width: 600px) {
+		    .cancelbtn , .password{
+		    	font-size: 12px;
+		    	padding: 0;
+		    }
+		}
+		@media screen and (max-width: 300px) {
+		    span.password {
+		       display: block;
+		       float: none;
+		    }
+		    .cancelbtn {
+		       width: 100%;
+		    }
+		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<!-- Add icon library -->
@@ -41,8 +140,47 @@
 				</div>
 				<ul>
 					<li ng-repeat="item in menuItems"><a href={{item.url}}>{{item.name}}</a></li>
+					<a><button onclick="document.getElementById('displayLoginForm').style.display='block'" style="width: auto; background: unset; border: none;" class="home_login">Login</button></a>
+					<a><button onclick="document.getElementById('displaySignForm').style.display='block'" style="width: auto; background: unset; border: none;" class="home_sign">Register</button></a>
 					<li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
 				</ul>
+			</div>
+			<div id="displayLoginForm" class="modal">
+			  
+				<form class="modal-content animate">
+				    <div class="imgcontainer">
+				    	<span onclick="document.getElementById('displayLoginForm').style.display='none'" class="close" title="Close Modal">&times;</span>
+				    	<img src="images/img_avatar.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div id="container">
+				    	<input type="text" name="username" placeholder="Username" required>
+
+						<input type="password" name="password" placeholder="Password" required>
+				    	<button type="submit" class="login">Login</button>
+			    		</div>
+				    </div>
+				</form>
+			</div>
+			<div id="displaySignForm" class="modal">
+				<form class="modal-content animate">
+				    <div class="imgcontainer">
+				    	<span onclick="document.getElementById('displaySignForm').style.display='none'" class="close" title="Close Modal">&times;</span>
+				    	<img src="images/img_avatar.png" alt="Avatar" class="avatar">
+				    </div>
+
+				    <div id="container">
+				    	<input type="text" name="fname" placeholder="First Name" required>
+						<input type="text" name="lname" placeholder="Last Name" required>
+						<input type="email" name="email" placeholder="Email" required>
+						<input type="tel" name="tel" placeholder="Mobile" required>
+						<input type="text" name="username" placeholder="Username" required>
+						<input type="password" name="password" placeholder="Password" required>
+						<input type="password" name="confirm_password" placeholder="Confirm Password" required>
+						<button type="submit" class="sign">Sign up</button>
+				    </div>
+
+				</form>
 			</div>
 		</section>
 	</header>
@@ -384,20 +522,20 @@
 			<section id="internal" style="padding: 0 1%;">
 				<div class="text-capitalize">
 					<div>
-						<h3>our external tourism.</h3>
-						<p>we introduce some of the amazing places in the world. in many cities around the world as london, paris, china, india, miami and the most places to visit of other cities.</p>
+						<h3>our internal tourism.</h3>
+						<p>we introduce some of the amazing places in egypt. in many cities around the country as cairo, aswan, alexandria, loxor, fayoum and the most places to visit of other cities.</p>
 					    <button class="btn btn-primary">learn more..</button><br><br>
 					</div>
 					<table style="font-size: 14px;">
 						<tr>
 							<td style="border: 5px solid #eee;">
 								<div class="col-md-8" style="background-color: #eee; opacity: 0.7;">
-									<h4>China</h4>
-									<p>this paragraph contains a short discription about china. this paragraph contains a short discription about china. this paragraph contains a short discription about china.</p>
+									<h4>Cairo</h4>
+									<p>this paragraph contains a short discription about cairo. this paragraph contains a short discription about cairo. this paragraph contains a short discription about cairo.</p>
 									<button class="btn btn-primary" style="border-radius: 10%; border: 2px solid #eee">more</button>
 								</div>
 								<div class="col-md-4" style="border-left: 5px solid #eee">
-									<img class="img-responsive" src="images/world/china.jpg" alt="China" width="100%">
+									<img class="img-responsive" src="images/egypt/cairo.jpg" alt="Cairo" width="100%">
 								</div>
 							</td>
 							<td rowspan="4" class="col-md-6" id="externalTourismTD">
@@ -703,6 +841,22 @@
 			</div>
 		</section>
 	</footer>
+
+	<script>
+		// Get the modal
+		var loginModal = document.getElementById('displayLoginForm'),
+			signModal = document.getElementById('displaySignForm');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		    if (event.target == loginModal) {
+		    	loginModal.style.display = "none";
+		    }
+		    if (event.target == signModal) {
+		    	 signModal.style.display = "none";
+		    }
+		}
+	</script>
 	<script>
 		$('.carousel').carousel({
 		  interval: 3000
